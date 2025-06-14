@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 85%;
+            border: 2px dashed #444;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px dotted #999;
+        }
+
+        thead {
+            background-color: #ff00a62b;;
+        }
+
+        input {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Krystel Dayana Alvarado Pérez</h1>
+    <h2>Krystel-Alvarado</h2>
+    <p>Mi usuario en GitHub: <a href="https://github.com/Krystel-Alvarado">Ver usuario</a></p>
+
+    <form>
+        <label for="nombre">Nombres:</label>
+        <input type="text" id="nombre" name="nombre"><br>
+
+        <label for="apellido">Apellidos:</label>
+        <input type="text" id="apellido" name="apellido"><br>
+
+        <label for="año">Año de nacimiento:</label>
+        <input type="number" id="anoNacimiento" name="anoDeNacimiento"><br>
+
+        <label for="mes de nacimiento">Mes de nacimiento (ej:abril):</label>
+        <input type="text" id="mesDeNacimiento" name="mesDeNacimiento"><br>
+
+        <input type="button" class="enviar" value="Registrar">
+
+    </form>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+                <th>Año de nacimiento</th>
+                <th>Mes de nacimiento</th>
+                <th>¿Año bisisesto?</th>
+                <th>¿Mes par o impar?</th>
+            </tr>
+        </thead>
+        <tbody id="tablaDatos">
+            
+        </tbody>
+    </table>
+
+ <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script type="module" src="codigo.js"></script>
+</body>
+</html>
